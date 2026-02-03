@@ -1,8 +1,8 @@
-package main
+package main // Defines the package.
 
-import "fmt"
+import "fmt" // Imports a dependency.
 
-func main() {
-	fmt.Println("Hello, world?")
+func main() { // Defines the main function.
+	fmt.Println("Hello, world?") // Writes output to the console.
 
-}
+} // Ends the current block.

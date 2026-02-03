@@ -1,23 +1,23 @@
-package main
+package main // Defines the package.
 
-import "fmt"
+import "fmt" // Imports a dependency.
 
-func intSeq() func() int {
-	i := 0
-	return func() int {
-		i++
-		return i
-	}
-}
+func intSeq() func() int { // Defines the intSeq function.
+	i := 0 // Initializes a variable.
+	return func() int { // Returns a value from the function.
+		i++ // Executes a statement.
+		return i // Returns a value from the function.
+	} // Ends the current block.
+} // Ends the current block.
 
-func main() {
+func main() { // Defines the main function.
 
-	nextInt := intSeq()
+	nextInt := intSeq() // Initializes a variable.
 
-	fmt.Println(nextInt())
-	fmt.Println(nextInt())
-	fmt.Println(nextInt())
+	fmt.Println(nextInt()) // Writes output to the console.
+	fmt.Println(nextInt()) // Writes output to the console.
+	fmt.Println(nextInt()) // Writes output to the console.
 
-	newInts := intSeq()
-	fmt.Println(newInts())
-}
+	newInts := intSeq() // Initializes a variable.
+	fmt.Println(newInts()) // Writes output to the console.
+} // Ends the current block.
