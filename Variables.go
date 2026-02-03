@@ -1,20 +1,20 @@
-package main
+package main // Defines the package.
 
-import "fmt"
+import "fmt" // Imports a dependency.
 
-func main() {
-	var a = "initial"
-	fmt.Println(a)
+func main() { // Defines the main function.
+	var a = "initial" // Declares a variable.
+	fmt.Println(a) // Writes output to the console.
 
-	var b, c int = 1, 2
-	fmt.Println(b, c)
+	var b, c int = 1, 2 // Declares a variable.
+	fmt.Println(b, c) // Writes output to the console.
 
-	var d = true
-	fmt.Println(d)
+	var d = true // Declares a variable.
+	fmt.Println(d) // Writes output to the console.
 
-	var e int
-	fmt.Println(e)
+	var e int // Declares a variable.
+	fmt.Println(e) // Writes output to the console.
 
-	f := "apple"
-	fmt.Println(f)
-}
+	f := "apple" // Initializes a variable.
+	fmt.Println(f) // Writes output to the console.
+} // Ends the current block.
