@@ -5,8 +5,8 @@ package main
 import "fmt"
 
 func main() {
-	var num1 int
-	var num2 int
+	var num1 float64
+	var num2 float64
 	var opr string
 	fmt.Print("Enter opr: ")
 	fmt.Scanln(&opr)
@@ -17,15 +17,15 @@ func main() {
 
 	switch opr {
 	case "+":
-		var c int = num1 + num2
+		var c float64 = num1 + num2
 		fmt.Println("addition: ", c)
 		break
 	case "-":
-		var d int = num1 - num2
+		var d float64 = num1 - num2
 		fmt.Println("subtraction: ", d)
 		break
 	case "*":
-		var e int = num1 * num2
+		var e float64 = num1 * num2
 		fmt.Println("multiplication: ", e)
 		break
 	default:
