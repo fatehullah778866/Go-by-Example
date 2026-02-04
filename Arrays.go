@@ -1,34 +1,34 @@
-package main
+package main // Defines the package.
 
-import "fmt"
+import "fmt" // Imports a dependency.
 
-func main() {
-	var a [5]int
-	fmt.Println("emp:", a)
+func main() { // Defines the main function.
+	var a [5]int // Declares a variable.
+	fmt.Println("emp:", a) // Writes output to the console.
 
-	a[4] = 100
-	fmt.Println("set:", a)
-	fmt.Println("get:", a[4])
-	fmt.Println("len:", len(a))
+	a[4] = 100 // Executes a statement.
+	fmt.Println("set:", a) // Writes output to the console.
+	fmt.Println("get:", a[4]) // Writes output to the console.
+	fmt.Println("len:", len(a)) // Writes output to the console.
 
-	b := [5]int{1, 2, 3, 4, 5}
-	fmt.Println("dcl:", b)
+	b := [5]int{1, 2, 3, 4, 5} // Initializes a variable.
+	fmt.Println("dcl:", b) // Writes output to the console.
 
-	b = [...]int{1, 2, 3, 4, 5}
-	fmt.Println("dcl:", b)
+	b = [...]int{1, 2, 3, 4, 5} // Executes a statement.
+	fmt.Println("dcl:", b) // Writes output to the console.
 
-	b = [...]int{100, 3: 400, 500}
-	fmt.Println("idx:", b)
-	var twoD [2][3]int
-	for i := range 2 {
-		for j := range 3 {
-			twoD[i][j] = i + j
-		}
-	}
-	fmt.Println("2d: ", twoD)
-	twoD = [2][3]int{
-		{1, 2, 3},
-		{1, 2, 3},
-	}
-	fmt.Println("2d: ", twoD)
-}
+	b = [...]int{100, 3: 400, 500} // Executes a statement.
+	fmt.Println("idx:", b) // Writes output to the console.
+	var twoD [2][3]int // Declares a variable.
+	for i := range 2 { // Initializes a variable.
+		for j := range 3 { // Initializes a variable.
+			twoD[i][j] = i + j // Executes a statement.
+		} // Ends the current block.
+	} // Ends the current block.
+	fmt.Println("2d: ", twoD) // Writes output to the console.
+	twoD = [2][3]int{ // Opens a new block.
+		{1, 2, 3}, // Executes a statement.
+		{1, 2, 3}, // Executes a statement.
+	} // Ends the current block.
+	fmt.Println("2d: ", twoD) // Writes output to the console.
+} // Ends the current block.

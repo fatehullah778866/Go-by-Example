@@ -1,47 +1,47 @@
-package main
+package main // Defines the package.
 
-import (
-	"fmt"
-	"time"
-)
+import ( // Starts the import block.
+	"fmt" // Executes a statement.
+	"time" // Executes a statement.
+) // Ends the import block.
 
-func main() {
-	i := 2
-	fmt.Println("Write ", i, "as ")
-	switch i {
-	case 1:
-		fmt.Println("one")
-	case 2:
-		fmt.Println("two")
-	case 3:
-		fmt.Println("three")
-	}
-	switch time.Now().Weekday() {
-	case time.Saturday, time.Sunday:
-		fmt.Println("It's the weekend")
-	default:
-		fmt.Println("It's a weekday")
-	}
+func main() { // Defines the main function.
+	i := 2 // Initializes a variable.
+	fmt.Println("Write ", i, "as ") // Writes output to the console.
+	switch i { // Starts a switch statement.
+	case 1: // Defines a switch case.
+		fmt.Println("one") // Writes output to the console.
+	case 2: // Defines a switch case.
+		fmt.Println("two") // Writes output to the console.
+	case 3: // Defines a switch case.
+		fmt.Println("three") // Writes output to the console.
+	} // Ends the current block.
+	switch time.Now().Weekday() { // Starts a switch statement.
+	case time.Saturday, time.Sunday: // Defines a switch case.
+		fmt.Println("It's the weekend") // Writes output to the console.
+	default: // Defines the default switch case.
+		fmt.Println("It's a weekday") // Writes output to the console.
+	} // Ends the current block.
 
-	t := time.Now()
-	switch {
-	case t.Hour() < 12:
-		fmt.Println("It's before noon")
-	default:
-		fmt.Println("It's after noon")
-	}
+	t := time.Now() // Initializes a variable.
+	switch { // Starts a switch statement.
+	case t.Hour() < 12: // Defines a switch case.
+		fmt.Println("It's before noon") // Writes output to the console.
+	default: // Defines the default switch case.
+		fmt.Println("It's after noon") // Writes output to the console.
+	} // Ends the current block.
 
-	whatAmI := func(i interface{}) {
-		switch t := i.(type) {
-		case bool:
-			fmt.Println("I'm a bool")
-		case int:
-			fmt.Println("I'm an int")
-		default:
-			fmt.Println("Don't know type %T\n", t)
-		}
-	}
-	whatAmI(true)
-	whatAmI(1)
-	whatAmI("hey")
-}
+	whatAmI := func(i interface{}) { // Initializes a variable.
+		switch t := i.(type) { // Initializes a variable.
+		case bool: // Defines a switch case.
+			fmt.Println("I'm a bool") // Writes output to the console.
+		case int: // Defines a switch case.
+			fmt.Println("I'm an int") // Writes output to the console.
+		default: // Defines the default switch case.
+			fmt.Println("Don't know type %T\n", t) // Writes output to the console.
+		} // Ends the current block.
+	} // Ends the current block.
+	whatAmI(true) // Executes a statement.
+	whatAmI(1) // Executes a statement.
+	whatAmI("hey") // Executes a statement.
+} // Ends the current block.
